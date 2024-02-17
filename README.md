@@ -1,0 +1,2 @@
+# shellconfig
+Nilesoft shell personalization
