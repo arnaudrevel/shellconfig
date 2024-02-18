@@ -15,8 +15,11 @@ modify(find="pin" pos="top" menu="Pin//Unpin")
 modify(where=this.id==id.copy_as_path menu="file manage")
 modify(type="dir.back|drive.back" where=this.id==id.customize_this_folder pos=1 sep="top" menu="file manage")
 
-modify(where=str.equals(this.name, ["open in terminal", "open linux shell here"]) || this.id==id.open_powershell_window_here
+modify(where=str.equals(this.name, ["open in terminal", "*Linux*"]) || this.id==id.open_powershell_window_here
 	pos="bottom" menu="Terminal")
+
+modify(mode="multiple" find="*Linux*" menu="Terminal")
+
 
 // Developper
 //modify(find="open with visual studio" pos=1 menu="develop/editors")

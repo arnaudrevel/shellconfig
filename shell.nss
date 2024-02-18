@@ -17,11 +17,11 @@ menu(mode="multiple" title="Pin/Unpin" image=icon.pin) { }
 
 menu(mode="multiple" title=title.more_options image=icon.more_options){}
 
-menu(mode="multiple" title="System" image=icon.more_options){}
+menu(mode="multiple" title="System" image=\uE0BE){}
 
-menu(mode="multiple" title="Cloud" image=icon.more_options){}
+menu(mode="multiple" title="Cloud" image=\uE027){}
 
-menu(mode="multiple" title="Utilitaires" image=icon.more_options){}
+menu(mode="multiple" title="Utilitaires" image=\UE0F8){}
 
 menu(mode="multiple" title="Ouvrir" image=icon.more_options){}
 
