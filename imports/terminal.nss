@@ -6,4 +6,7 @@ menu(type='*' where=(sel.count or wnd.is_taskbar or wnd.is_edit) title=title.ter
 	item(title=title.command_prompt tip=tip_run_admin admin=has_admin image cmd='cmd.exe' args='/K TITLE Command Prompt &ver& PUSHD "@sel.dir"')
 	item(title=title.windows_powershell admin=has_admin tip=tip_run_admin image cmd='powershell.exe' args='-noexit -command Set-Location -Path "@sel.dir\."')
 	item(where=package.exists("WindowsTerminal") title=title.Windows_Terminal tip=tip_run_admin admin=has_admin image='@package.path("WindowsTerminal")\WindowsTerminal.exe' cmd='wt.exe' arg='-d "@sel.path\."')
+
+	//modify(where=this.name=="open in terminal" || this.name=="open linux shell here" || this.id==id.open_powershell_window_here	pos="bottom" menu="Terminal")
+	//modify(find="*Linux*" menu="Terminal")
 }
