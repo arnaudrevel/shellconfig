@@ -3,6 +3,7 @@
 
 //modify(mode=mode.multiple	where=this.id(id.restore_previous_versions,id.cast_to_device) vis=vis.remove)
 
+// Recyclebin
 modify(type="recyclebin" where=window.is_desktop and this.id==id.empty_recycle_bin pos=1 sep  menu="System") // Add a systme menu
 
 
@@ -15,15 +16,15 @@ modify(find="pin" pos="top" menu="Pin//Unpin")
 modify(where=this.id==id.copy_as_path menu="file manage")
 modify(type="dir.back|drive.back" where=this.id==id.customize_this_folder pos=1 sep="top" menu="file manage")
 
-modify(where=str.equals(this.name, ["open in terminal", "*Linux*"]) || this.id==id.open_powershell_window_here
-	pos="bottom" menu="Terminal")
+//modify(where=str.equals(this.name, ["open in terminal", "*Linux*"]) || this.id==id.open_powershell_window_here
+//	pos="bottom" menu="Terminal")
 
 modify(mode="multiple" find="*Linux*" menu="Terminal")
-
 
 // Developper
 //modify(find="open with visual studio" pos=1 menu="develop/editors")
 //modify(find="*Visual*" pos=1 menu="develop/editors")
+modify(mode="multiple" find="*Visual*" menu="Develop")
 
 //Move and organize
 //modify(mode=mode.multiple find="scan with" menu=title.more_options)
@@ -51,8 +52,6 @@ modify(type="file|directory" find="Ouvrir*|Open*" menu="Ouvrir" sep)
 
 // Glary
 modify(mode="multiple" find="*Glary*" menu="Utilitaires/Glary")
-
-//modify(mode="multiple" find="*Visual*" menu="Develop")
 
 // Fichiers
 modify(mode="multiple" where=this.id(id.cut,id.delete,id.copy,id.paste) menu="Fichiers" sep)
