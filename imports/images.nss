@@ -1,3 +1,4 @@
+// Not modified
 $color3 = @if(theme.islight,image.color3,'none')
 $color_islight_WB = @if(theme.islight,'#fff','#000')
 $clipPath='<defs><clipPath id="clip0"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs>'

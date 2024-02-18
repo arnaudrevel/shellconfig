@@ -1,12 +1,13 @@
-﻿theme
+﻿// Not modified
+theme
 {
-	name="modern"
-	dark=auto
+	name = "modern"
+	dark = sys.dark
 	background
 	{
-		color=auto
-		opacity=50
-		effect=0
+		color = default
+		opacity = sys.is11 ? default : 90
+		effect = default
 	}
-	image.align=2
+	image.align = 2
 }
