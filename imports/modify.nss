@@ -44,7 +44,7 @@ modify(mode="multiple" where=this.id(id.share) menu="Cloud")
 modify(mode="multiple" find="Analyser*" menu="Utilitaires")
 modify(where=this.title=="7-Zip" menu="Utilitaires")
 modify(where=this.title=="File Converter" menu="Utilitaires")
-modify(where=this.title=="TreeSize" menu="Utilitaires")
+//modify(where=this.title=="TreeSize" menu="Utilitaires")
 modify(mode="multiple" find="Qu*|Scan*|PowerRename" menu="Utilitaires")
 
 // Ouvrir
